@@ -164,7 +164,7 @@ article > p{
 
 .card_img{
     width: 100%;
-    height: 100%;
+    height: 55%;
     background-image: url(../images/sofa_card.jpeg);
     background-size: cover;
     background-position: center;
