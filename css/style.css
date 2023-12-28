@@ -1,5 +1,72 @@
-.main {
+:root{
+    --light-100: #DFD9D9;
+    --light-40: rgba(223, 217, 217, 0.40);
+    --background: #1C5550;
+    --buttonColor: #C3B97F;
+    --fontSizeAsideHeading: 24px;
+    --fontSizeNav: 18px;
+    --fontSizeCardSpan: 16px;
+    --fontSizeAsideLink: 14px;
+}
+
+body {
+    background-color: #888;
+}
+
+main {
     max-width: 1440px;
     width: 100%;
     margin: auto;
+    display: grid;
+    grid-template-columns: 320px 320px 320px 320px;
+    grid-template-rows: 48px 146px 146px 280px;
+    column-gap: 40px;
+    row-gap: 40px;
+    padding: 25px;
+    grid-template-areas:
+    "header header header header"
+    "aside big big small_1"
+    "aside big big small_2"
+    "card card card card";
+}
+
+header {
+    background-color: #f0f0f0;
+    grid-area: header;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #e0e0e0;
+}
+
+#big {
+    grid-area: big;
+    background-color: #fff;
+}
+
+#small_1 {
+    grid-area: small_1;
+    background-color: #ccc;
+}
+
+#small_2 {
+    grid-area: small_2;
+    background-color: #ddd;
+}
+
+#card_1 {
+    background-color: #99f;
+}
+
+#card_2 {
+    background-color: #f99;
+}
+
+#card_3 {
+    background-color: #9f9;
+}
+
+#card_4 {
+    background-color: #f6f;
 }
